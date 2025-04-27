@@ -25,15 +25,31 @@ When you save the notebook, an HTML file containing the code and output will be 
 
 The preview shows you a rendered HTML copy of the contents of the editor. Consequently, unlike *Knit*, *Preview* does not run any R code chunks. Instead, the output of the chunk when it was last run in the editor is displayed.
 
+
+**Week 2 Analysis**
+The early voting dataset has 168 rows and 21 columns, showing early votes cast by county and party for Maryland’s 2024 primary. There are no missing values, but to answer some countywide questions, we had to combine the party-level results. The dataset only covers early voting across an eight-day period — it doesn’t include mail-in ballots, Election Day voting, or provisional ballots. That limits how much we can say about overall turnout or voting method trends without pulling in more data.
+
+Column names like party (DEM, REP, LIB, NLM, OTH) identify different political parties, though the file doesn’t define them directly. We matched these using Maryland’s election documentation. The eligible_actives column shows the number of registered active voters, but there’s no demographic breakdown. Overall, the data works well for tracking early voting by county but doesn’t stand alone for broader turnout or mail-in ballot analysis.
+
+
+The mail-in ballots dataset has 482 rows and 15 columns, tracking ballots sent, received, and accepted across counties and districts in Maryland's 2024 primary. There are minor missing values: three missing county and district names, and one missing total in the total_accepted column. To answer countywide questions, we would need to combine rows by county, since ballots are also broken down by voting district.
+
+The dataset focuses only on mail-in ballots. It does not include early voting, Election Day turnout, or provisional ballots. This limits its ability to explain full voter participation or ballot method choices without additional datasets.
+
+Column names like dem_sent, rep_sent, oth_sent, total_sent, and similar fields for received and accepted distinguish ballots by party and status. These fields are clear, though some categories (like "OTH") required outside election documentation to fully define. Overall, the dataset is strong for analyzing mail ballot flows, but incomplete for full turnout analysis.
+
 **Week 2 code**
 #loading datasets
 ```{r}
+
 early_voting_turnout <- read.csv("data/early_voting.csv")
 mail_in_ballots <- read.csv("data/mail_in_ballots.csv")
+
 ```
 
 #cleaning dataset ONE via coding to fix column names, then exporting the dataset to excel to add missing variables (county names)
 ```{r}
+
 early_voting_turnout <- early_voting_turnout |>
   clean_names() |>
   mutate(across(starts_with("day"), ~gsub(",", "", .) %>% as.numeric)) |>
@@ -108,7 +124,9 @@ write_csv(mail_in_ballots, "data/mail_in_ballots.csv", col_names = TRUE)
 
 ```
 
+```{r}
 
-**Week 2**
-The first dataset displays the amount of 
+clean_mail_in_ballots <- read_csv("data/clean_mail_in_ballots.csv")
+
+```
 
