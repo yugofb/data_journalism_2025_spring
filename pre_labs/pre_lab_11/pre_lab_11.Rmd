@@ -146,7 +146,7 @@ So, all we need to do now is to store that single dataframe as an object. We can
 
 ### Task 5: Save one table from the HTML source
 
-**Task** Run the following code in the gray-colored codeblock below to extract all tables in the HTML and save it as a dataframe. What do you notice about the columns? **Answer**
+**Task** Run the following code in the gray-colored codeblock below to extract all tables in the HTML and save it as a dataframe. What do you notice about the columns? **Answer** The columns represent the number of votes given to each party by Maryland jusisdiction, i.e. county. However, the votes for each candidate should be in `<dbl>` and not `<chr>`. This may have occured because the numbers have commas, which cannot be present in the `<dbl>` datatype.
 
 ```{r}
 # Read in all html from table, store all tables on page as nested list of dataframes.
@@ -171,7 +171,8 @@ Then let's use slice() to remove the last row -- row number 25 -- which contains
 
 ### Task 6: Clean up the data
 
-**Task** Run the following code to extract the table we want, clean up the names and remove the total row. Look at the rename() function - what do you think the numbers 2 through 6 are referring to? **Answer**
+**Task** Run the following code to extract the table we want, clean up the names and remove the total row. Look at the rename() function - what do you think the numbers 2 through 6 are referring to?
+**Answer** I think the numbers for rename may represent the order in which candidates were listed on the original ballot.
 
 ```{r}
 # Read in all html from table, get the HTML table.
@@ -235,7 +236,15 @@ Once again we get a list of two as our result. In this case, we don't want to is
 
 ### Task 10: Isolate the list of `li` tags inside the HTML using `html_elements`
 
-**Task** Run the following code in the gray-colored codeblock below to find the <li> tags. What does the output suggest about how many <ul> tags there are in the HTML source? **Answer**
+**Task** Run the following code in the gray-colored codeblock below to find the <li> tags. What does the output suggest about how many <ul> tags there are in the HTML source?
+**Answer** There are 20 <li> (listed) tags in the source's html. These twenty tags are dicided between  seven <ul> (unlisted) tags. This suggests that the individual <li> tags are being categorized depending on their content.
+
+```{r}
+
+cmte_results |> html_elements('ul')
+
+```
+
 
 ```{r}
 cmte_results |> html_elements('li')
@@ -247,7 +256,8 @@ tags. To do that, we add `html_text()` to the end of the last code block:
 
 ### Task 10: Isolate the text of `li` tags inside the HTML using `html_text`
 
-**Task** Run the following code in the gray-colored codeblock below to find the text inside <li> tags. Describe the output: **Answer**
+**Task** Run the following code in the gray-colored codeblock below to find the text inside <li> tags. Describe the output:
+**Answer** The output shows the text inside of each <li> tag. This text functions as a title and tells us the contents of each <li>.
 
 ```{r}
 cmte_results |> html_elements('li') |> html_text()
@@ -255,7 +265,8 @@ cmte_results |> html_elements('li') |> html_text()
 
 Ok, so now we can see the committee names. But they are surrounded by a bunch of things we don't want, and this *still* isn't a dataframe. Let's solve the second problem first with the `tibble()` function, and use `html_attr` to look for the 'href' value inside the `a` tags.
 
-### Task 11: Turn the contents of the <li> and <a> tags into a dataframe **Task** Run the following code in the gray-colored codeblock below to make a dataframe. Describe the output: **Answer**
+### Task 11: Turn the contents of the <li> and <a> tags into a dataframe **Task** Run the following code in the gray-colored codeblock below to make a dataframe. Describe the output:
+**Answer** The result is a list with a length of 54 items that each contain the item's html text and href (urls), listed as "type" and "value."
 
 ```{r}
 committees <- cmte_results |> html_elements("li a")
