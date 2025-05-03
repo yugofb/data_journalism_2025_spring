@@ -90,9 +90,20 @@ Let's write a bit of code to tell R to go to the URL for the page and ingest all
 **Task** Run the following code in the gray-colored codeblock below to save the HTML from that URL as a variable
 
 ```{r}
+##easier way to read in the html
+
+pres_url <- read_html(URL)
+
+
+
+```
+
+
+```{r}
 # read in the html
 results <- pres_url |>
-  read_html()
+  read_html() |>
+  html_table
 
 # display the html below
 results

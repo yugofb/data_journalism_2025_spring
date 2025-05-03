@@ -131,3 +131,60 @@ clean_mail_in_ballots <- read_csv("data/clean_mail_in_ballots.csv")
 
 ```
 
+**Week 3 Code**
+
+Question #1: Which counties had the highest and lowest early voting turnout in 2024?
+**Answer: Prince George's county had the highest early voting turnout with 23,385 total early votes. Somerset had the lowest early voting turnout with 450 total early votes.**
+```{r}
+
+clean_early_voting_turnout |>
+  select(county, total, party) |>
+  filter(party == "TOTAL") |>
+    group_by(county) |>
+    summarise(total) |>
+    arrange(desc(total))
+
+```
+
+```{r}
+
+clean_early_voting_turnout |>
+  select(county, total, party) |>
+  filter(party == "TOTAL") |>
+    group_by(county) |>
+    summarise(total) |>
+    arrange(total)
+
+```
+
+Question #2: How many people voted by mail versus in person in the 2024 election?
+**Answer: **
+```{r}
+
+
+
+```
+
+Question #3: Which counties had the highest percentage of rejected mail-in ballots?
+**Answer: **
+```{r}
+
+
+
+```
+
+Question #4: By what percent has overall voter turnout increased or decreased since 2020?
+**Answer: **
+```{r}
+
+
+
+```
+
+Question #5: Which counties relied most heavily on early voting in 2024?
+**Answer: **
+```{r}
+
+
+
+```
