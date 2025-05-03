@@ -59,7 +59,7 @@ Simlar to `readr`, the `sf` library has functions to read geographic data. In th
 ### Task: Load data
 
 **Task** Run the following code to load data. Describe what you see in the answer space below. What columns exist in this data?
-**Answer** The data has columns for preceinct id number, precinct name, congress, legislature, council, school, polling id, shape length, shape area and shape.
+**Answer** The data has columns for precinct id number, precinct name, congress, legislature, council, school, polling id, shape length, shape area and shape.
 
 ```{r}
 pg_precincts <- st_read("data/Election_Precinct_2022_Py.gdb")
