@@ -157,15 +157,26 @@ clean_early_voting_turnout |>
 
 ```
 
-Question #2: How many people voted by mail versus in person in the 2024 election?
-**Answer: **
+Question #2: For the county with the most early votes, which days had the highest and lowest total number of early votes? What is the percentage difference between these days?
+**Answer: For Prince George's county, day 8 (the last day of early voting) had the highest number of early votes with a total of 6,338. Day 3 had the lowest number of early votes with a total of 1,154. The difference between the highest and lowest days was 5184 votes, with day 8 recieving about 75% more votes than day 3.**
 ```{r}
 
+clean_early_voting_turnout |>
+  select(county, party, day1, day2, day3, day4, day5, day6, day7, day8, total) |>
+  filter(county == "Prince Georges") |>
+  filter(party == "TOTAL") |>
+    group_by(county) |>
+    summarise(day1, day2, day3, day4, day5, day6, day7, day8, total)
+  
+```
+```{r}
 
+((6338-1154) / (6338+1154/2)) * 100
 
 ```
 
-Question #3: Which counties had the highest percentage of rejected mail-in ballots?
+
+Question #3: Which counties had the highest percentage of rejected mail-in ballots? What was the percentage?
 **Answer: **
 ```{r}
 
