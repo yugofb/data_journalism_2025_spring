@@ -1,0 +1,492 @@
+category,county_name,district,dem_sent,rep_sent,oth_sent,total_sent,dem_received,rep_received,oth_received,total_received,dem_accepted,rep_accepted,oth_accepted,total_accepted
+all,allegany,statewide,2227,2030,0,4257,1641,1553,0,3194,1635,1550,0,3185
+all,anne arundel,statewide,39200,16274,7197,62671,27372,11065,2019,40456,27244,11016,1992,40252
+all,baltimore city,statewide,48765,2946,0,51711,35750,1627,0,37377,35455,1604,0,37059
+all,baltimore county,statewide,63038,18354,0,81392,45181,12553,0,57734,44937,12496,0,57433
+all,calvert,statewide,5397,3264,1883,10544,3969,2302,785,7056,3927,2271,777,6975
+all,caroline,statewide,840,685,0,1525,578,472,0,1050,576,471,0,1047
+all,carroll,statewide,8063,6383,0,14446,5696,4616,0,10312,5665,4600,0,10265
+all,cecil,statewide,3317,3429,0,6746,2264,2574,0,4838,2257,2565,0,4822
+all,charles,statewide,10565,2412,2004,14981,7459,1686,595,9740,7414,1681,587,9682
+all,dorchester,statewide,1523,771,135,2429,1115,603,43,1761,1112,599,41,1752
+all,frederick,statewide,17889,7052,5267,30208,12431,4702,1707,18840,12374,4676,1692,18742
+all,garrett,statewide,802,1090,0,1892,627,809,0,1436,623,805,0,1428
+all,harford,statewide,11478,7424,0,18902,8064,5361,0,13425,8023,5329,0,13352
+all,howard,statewide,26412,6327,4941,37680,18096,4252,1755,24103,17961,4232,1736,23929
+all,kent,statewide,1277,537,0,1814,976,414,0,1390,975,414,0,1389
+all,montgomery,statewide,98022,15129,21019,134170,65758,8984,5795,80537,65257,8905,5721,79883
+all,prince georges,statewide,68804,4415,4273,77492,50124,2774,1108,54006,49766,2759,1096,53621
+all,queen annes,statewide,2247,1680,0,3927,1602,1177,0,2779,1593,1175,0,2768
+all,saint marys,statewide,4548,2953,1483,8984,3288,2099,530,5917,3284,2098,530,5912
+all,somerset,statewide,689,477,0,1166,483,329,0,812,481,326,0,807
+all,talbot,statewide,2513,1312,130,3955,1933,998,30,2961,1921,994,29,2944
+all,washington,statewide,6153,4198,2117,12468,4557,3061,745,8363,4534,3040,727,8301
+all,wicomico,statewide,3950,2152,0,6102,2798,1564,0,4362,2784,1558,0,4342
+all,worcester,statewide,2897,2105,235,5237,2074,1517,83,3674,2065,1505,82,3652
+,total,,430616,113399,50684,594699,303836,77092,15195,396123,301863,76669,15010,393542
+,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+category,county name,district,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+civilian overseas,allegany,statewide,15,0,0,15,6,0,0,6,6,0,0,6
+civilian overseas,anne arundel,statewide,333,74,44,451,114,33,6,153,113,32,6,151
+civilian overseas,baltimore city,statewide,386,53,0,439,141,9,0,150,139,9,0,NA
+civilian overseas,baltimore county,statewide,355,63,0,418,118,25,0,143,113,25,0,138
+civilian overseas,calvert,statewide,29,5,11,45,11,4,5,20,10,4,5,19
+civilian overseas,caroline,statewide,6,0,0,6,0,0,0,0,0,0,0,0
+civilian overseas,carroll,statewide,41,14,0,55,14,6,0,20,14,6,0,20
+civilian overseas,cecil,statewide,18,7,0,25,3,3,0,6,3,3,0,6
+civilian overseas,charles,statewide,29,5,2,36,12,3,0,15,12,3,0,15
+civilian overseas,dorchester,statewide,8,3,0,11,6,1,0,7,6,1,0,7
+civilian overseas,frederick,statewide,130,29,18,177,55,12,0,67,55,12,0,67
+civilian overseas,garrett,statewide,5,2,0,7,2,2,0,4,2,2,0,4
+civilian overseas,harford,statewide,66,20,0,86,25,7,0,32,25,6,0,31
+civilian overseas,howard,statewide,295,33,21,349,105,17,0,122,104,17,0,121
+civilian overseas,kent,statewide,13,0,0,13,8,0,0,8,8,0,0,8
+civilian overseas,montgomery,statewide,1988,209,185,2382,702,65,24,791,697,65,23,785
+civilian overseas,prince georges,statewide,320,36,17,373,121,16,2,139,120,16,2,138
+civilian overseas,queen annes,statewide,30,3,0,33,3,1,0,4,2,1,0,3
+civilian overseas,saint marys,statewide,31,11,3,45,12,4,0,16,12,4,0,16
+civilian overseas,somerset,statewide,5,0,0,5,0,0,0,0,0,0,0,0
+civilian overseas,talbot,statewide,22,6,1,29,11,3,0,14,11,3,0,14
+civilian overseas,washington,statewide,33,4,4,41,16,2,0,18,16,2,0,18
+civilian overseas,wicomico,statewide,30,8,0,38,13,2,0,15,13,2,0,15
+civilian overseas,worcester,statewide,21,2,0,23,9,2,0,11,9,2,0,11
+,total,,4209,587,306,5102,1507,217,37,1761,1490,215,36,1741
+,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+category,county name,district,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+domestic civilian,allegany,statewide,2209,2030,0,4239,1632,1553,0,3185,1626,1550,0,3176
+domestic civilian,anne arundel,statewide,38739,16115,7103,61957,27200,10991,2008,40199,27074,10943,1981,39998
+domestic civilian,baltimore city,statewide,48350,2884,0,51234,35596,1616,0,37212,35303,1594,0,36897
+domestic civilian,baltimore county,statewide,62643,18269,0,80912,45042,12518,0,57560,44803,12461,0,57264
+domestic civilian,calvert,statewide,5346,3241,1860,10447,3946,2289,775,7010,3905,2258,767,6930
+domestic civilian,caroline,statewide,834,679,0,1513,578,468,0,1046,576,467,0,1043
+domestic civilian,carroll,statewide,8012,6357,0,14369,5677,4604,0,10281,5646,4588,0,10234
+domestic civilian,cecil,statewide,3296,3414,0,6710,2259,2566,0,4825,2252,2557,0,4809
+domestic civilian,charles,statewide,10502,2388,1983,14873,7437,1670,592,9699,7392,1665,584,9641
+domestic civilian,dorchester,statewide,1514,768,135,2417,1108,602,43,1753,1105,598,41,1744
+domestic civilian,frederick,statewide,17739,6997,5226,29962,12367,4676,1704,18747,12310,4652,1690,18652
+domestic civilian,garrett,statewide,796,1086,0,1882,624,805,0,1429,620,801,0,1421
+domestic civilian,harford,statewide,11397,7379,0,18776,8033,5344,0,13377,7992,5313,0,13305
+domestic civilian,howard,statewide,26067,6271,4903,37241,17978,4228,1753,23959,17845,4208,1734,23787
+domestic civilian,kent,statewide,1263,537,0,1800,968,414,0,1382,967,414,0,1381
+domestic civilian,montgomery,statewide,95913,14879,20775,131567,65014,8902,5761,79677,64519,8824,5688,79031
+domestic civilian,prince georges,statewide,68396,4351,4228,76975,49977,2749,1106,53832,49620,2734,1094,53448
+domestic civilian,queen annes,statewide,2214,1674,0,3888,1597,1175,0,2772,1589,1173,0,2762
+domestic civilian,saint marys,statewide,4499,2910,1461,8870,3267,2086,527,5880,3263,2085,527,5875
+domestic civilian,somerset,statewide,684,477,0,1161,483,329,0,812,481,326,0,807
+domestic civilian,talbot,statewide,2490,1304,129,3923,1921,994,30,2945,1909,990,29,2928
+domestic civilian,washington,statewide,6112,4180,2110,12402,4538,3053,745,8336,4515,3032,727,8274
+domestic civilian,wicomico,statewide,3917,2140,0,6057,2784,1561,0,4345,2770,1555,0,4325
+domestic civilian,worcester,statewide,2874,2097,235,5206,2065,1514,83,3662,2056,1502,82,3640
+,total,,425806,112427,50148,588381,302091,76707,15127,393925,300138,76290,14944,391372
+,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+category,county name,district,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+military overseas,allegany,statewide,1,0,0,1,1,0,0,1,1,0,0,1
+military overseas,anne arundel,statewide,25,12,10,47,13,4,1,18,13,4,1,18
+military overseas,baltimore city,statewide,4,3,0,7,2,0,0,2,2,0,0,2
+military overseas,baltimore county,statewide,6,7,0,13,2,3,0,5,2,3,0,5
+military overseas,calvert,statewide,4,4,2,10,3,2,1,6,3,2,1,6
+military overseas,caroline,statewide,0,3,0,3,0,3,0,3,0,3,0,3
+military overseas,carroll,statewide,1,4,0,5,0,2,0,2,0,2,0,2
+military overseas,cecil,statewide,1,3,0,4,1,3,0,4,1,3,0,4
+military overseas,charles,statewide,6,5,5,16,2,2,1,5,2,2,1,5
+military overseas,dorchester,statewide,0,0,0,0,0,0,0,0,0,0,0,0
+military overseas,frederick,statewide,3,6,5,14,0,5,0,5,0,5,0,5
+military overseas,garrett,statewide,0,0,0,0,0,0,0,0,0,0,0,0
+military overseas,harford,statewide,5,6,0,11,3,2,0,5,3,2,0,5
+military overseas,howard,statewide,8,10,4,22,1,1,0,2,1,1,0,2
+military overseas,kent,statewide,0,0,0,0,0,0,0,0,0,0,0,0
+military overseas,montgomery,statewide,22,3,12,37,6,0,3,9,5,0,3,8
+military overseas,prince georges,statewide,14,4,4,22,4,1,0,5,4,1,0,5
+military overseas,queen annes,statewide,0,2,0,2,0,1,0,1,0,1,0,1
+military overseas,saint marys,statewide,3,2,4,9,1,1,0,2,1,1,0,2
+military overseas,somerset,statewide,0,0,0,0,0,0,0,0,0,0,0,0
+military overseas,talbot,statewide,0,1,0,1,0,0,0,0,0,0,0,0
+military overseas,washington,statewide,1,4,2,7,0,1,0,1,0,1,0,1
+military overseas,wicomico,statewide,1,3,0,4,0,1,0,1,0,1,0,1
+military overseas,worcester,statewide,1,2,0,3,0,0,0,0,0,0,0,0
+,total,,106,84,48,238,39,32,6,77,38,32,6,76
+,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+category,county name,district,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+military us,allegany,statewide,2,0,0,2,2,0,0,2,2,0,0,2
+military us,anne arundel,statewide,103,73,40,216,45,37,4,86,44,37,4,85
+military us,baltimore city,statewide,25,6,0,31,11,2,0,13,11,1,0,12
+military us,baltimore county,statewide,34,15,0,49,19,7,0,26,19,7,0,26
+military us,calvert,statewide,18,14,10,42,9,7,4,20,9,7,4,20
+military us,caroline,statewide,0,3,0,3,0,1,0,1,0,1,0,1
+military us,carroll,statewide,9,8,0,17,5,4,0,9,5,4,0,9
+military us,cecil,statewide,2,5,0,7,1,2,0,3,1,2,0,3
+military us,charles,statewide,28,14,14,56,8,11,2,21,8,11,2,21
+military us,dorchester,statewide,1,0,0,1,1,0,0,1,1,0,0,1
+military us,frederick,statewide,17,20,18,55,9,9,3,21,9,7,2,18
+military us,garrett,statewide,1,2,0,3,1,2,0,3,1,2,0,3
+military us,harford,statewide,10,19,0,29,3,8,0,11,3,8,0,11
+military us,howard,statewide,42,13,13,68,12,6,2,20,11,6,2,19
+military us,kent,statewide,1,0,0,1,0,0,0,0,0,0,0,0
+military us,montgomery,statewide,99,38,47,184,36,17,7,60,36,16,7,59
+military us,prince georges,statewide,74,24,24,122,22,8,0,30,22,8,0,30
+military us,queen annes,statewide,3,1,0,4,2,0,0,2,2,0,0,2
+military us,saint marys,statewide,15,30,15,60,8,8,3,19,8,8,3,19
+military us,somerset,statewide,0,0,0,0,0,0,0,0,0,0,0,0
+military us,talbot,statewide,1,1,0,2,1,1,0,2,1,1,0,2
+military us,washington,statewide,7,10,1,18,3,5,0,8,3,5,0,8
+military us,wicomico,statewide,2,1,0,3,1,0,0,1,1,0,0,1
+military us,worcester,statewide,1,4,0,5,0,1,0,1,0,1,0,1
+,total,,495,301,182,978,199,136,25,360,197,132,24,353
+category,county name,district,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+civilian overseas,anne arundel,councilmanic district code 001,26,11,8,45,9,6,1,16,8,6,1,15
+civilian overseas,anne arundel,councilmanic district code 002,16,9,0,25,6,6,0,12,6,5,0,11
+civilian overseas,anne arundel,councilmanic district code 003,28,9,8,45,11,3,0,14,11,3,0,14
+civilian overseas,anne arundel,councilmanic district code 004,31,15,16,62,11,6,3,20,11,6,3,20
+civilian overseas,anne arundel,councilmanic district code 005,64,12,12,88,16,2,2,20,16,2,2,20
+civilian overseas,anne arundel,councilmanic district code 006,123,8,0,131,43,6,0,49,43,6,0,49
+civilian overseas,anne arundel,councilmanic district code 007,45,10,0,55,18,4,0,22,18,4,0,22
+,anne arundel total,,333,74,44,451,114,33,6,153,113,32,6,151
+civilian overseas,baltimore city,councilmanic district code 001,34,2,0,36,13,0,0,13,13,0,0,13
+civilian overseas,baltimore city,councilmanic district code 002,5,2,0,7,1,0,0,1,1,0,0,1
+civilian overseas,baltimore city,councilmanic district code 003,22,0,0,22,6,0,0,6,6,0,0,6
+civilian overseas,baltimore city,councilmanic district code 004,29,1,0,30,12,0,0,12,10,0,0,10
+civilian overseas,baltimore city,councilmanic district code 005,65,29,0,94,23,4,0,27,23,4,0,27
+civilian overseas,baltimore city,councilmanic district code 006,26,3,0,29,11,0,0,11,11,0,0,11
+civilian overseas,baltimore city,councilmanic district code 007,17,1,0,18,7,1,0,8,7,1,0,8
+civilian overseas,baltimore city,councilmanic district code 008,12,1,0,13,1,0,0,1,1,0,0,1
+civilian overseas,baltimore city,councilmanic district code 009,5,0,0,5,2,0,0,2,2,0,0,2
+civilian overseas,baltimore city,councilmanic district code 010,10,2,0,12,3,0,0,3,3,0,0,3
+civilian overseas,baltimore city,councilmanic district code 011,43,6,0,49,14,1,0,15,14,1,0,15
+civilian overseas,baltimore city,councilmanic district code 012,27,1,0,28,8,1,0,9,8,1,0,9
+civilian overseas,baltimore city,councilmanic district code 013,17,1,0,18,9,1,0,10,9,1,0,10
+civilian overseas,baltimore city,councilmanic district code 014,74,4,0,78,31,1,0,32,31,1,0,32
+,baltimore city total,,386,53,0,439,141,9,0,150,139,9,0,148
+civilian overseas,baltimore county,councilmanic district code 001,41,5,0,46,14,1,0,15,14,1,0,15
+civilian overseas,baltimore county,councilmanic district code 002,94,24,0,118,30,7,0,37,28,7,0,35
+civilian overseas,baltimore county,councilmanic district code 003,96,13,0,109,27,6,0,33,26,6,0,32
+civilian overseas,baltimore county,councilmanic district code 004,33,3,0,36,15,2,0,17,14,2,0,16
+civilian overseas,baltimore county,councilmanic district code 005,28,5,0,33,9,2,0,11,8,2,0,10
+civilian overseas,baltimore county,councilmanic district code 006,49,9,0,58,20,4,0,24,20,4,0,24
+civilian overseas,baltimore county,councilmanic district code 007,14,4,0,18,3,3,0,6,3,3,0,6
+,baltimore county total,,355,63,0,418,118,25,0,143,113,25,0,138
+civilian overseas,cecil,councilmanic district code 001,5,2,0,7,1,1,0,2,1,1,0,2
+civilian overseas,cecil,councilmanic district code 002,5,2,0,7,0,1,0,1,0,1,0,1
+civilian overseas,cecil,councilmanic district code 003,4,0,0,4,1,0,0,1,1,0,0,1
+civilian overseas,cecil,councilmanic district code 004,1,2,0,3,1,1,0,2,1,1,0,2
+civilian overseas,cecil,councilmanic district code 005,3,1,0,4,0,0,0,0,0,0,0,0
+,cecil total,,18,7,0,25,3,3,0,6,3,3,0,6
+civilian overseas,dorchester,councilmanic district code 001,5,2,0,7,4,1,0,5,4,1,0,5
+civilian overseas,dorchester,councilmanic district code 002,2,0,0,2,2,0,0,2,2,0,0,2
+civilian overseas,dorchester,councilmanic district code 003,1,0,0,1,0,0,0,0,0,0,0,0
+civilian overseas,dorchester,councilmanic district code 004,0,0,0,0,0,0,0,0,0,0,0,0
+civilian overseas,dorchester,councilmanic district code 005,0,1,0,1,0,0,0,0,0,0,0,0
+,dorchester total,,8,3,0,11,6,1,0,7,6,1,0,7
+civilian overseas,frederick,councilmanic district code 001,24,6,6,36,12,3,0,15,12,3,0,15
+civilian overseas,frederick,councilmanic district code 002,25,10,3,38,10,1,0,11,10,1,0,11
+civilian overseas,frederick,councilmanic district code 003,30,5,3,38,11,3,0,14,11,3,0,14
+civilian overseas,frederick,councilmanic district code 004,36,3,4,43,14,2,0,16,14,2,0,16
+civilian overseas,frederick,councilmanic district code 005,15,5,2,22,8,3,0,11,8,3,0,11
+,frederick total,,130,29,18,177,55,12,0,67,55,12,0,67
+civilian overseas,harford,councilmanic district code a,3,1,0,4,1,1,0,2,1,1,0,2
+civilian overseas,harford,councilmanic district code b,10,3,0,13,3,1,0,4,3,1,0,4
+civilian overseas,harford,councilmanic district code c,11,4,0,15,4,1,0,5,4,0,0,4
+civilian overseas,harford,councilmanic district code d,8,3,0,11,4,2,0,6,4,2,0,6
+civilian overseas,harford,councilmanic district code e,17,4,0,21,6,0,0,6,6,0,0,6
+civilian overseas,harford,councilmanic district code f,17,5,0,22,7,2,0,9,7,2,0,9
+,harford total,,66,20,0,86,25,7,0,32,25,6,0,31
+civilian overseas,howard,councilmanic district code 001,48,5,7,60,18,2,0,20,18,2,0,20
+civilian overseas,howard,councilmanic district code 002,62,8,0,70,22,5,0,27,21,5,0,26
+civilian overseas,howard,councilmanic district code 003,47,7,0,54,17,5,0,22,17,5,0,22
+civilian overseas,howard,councilmanic district code 004,84,5,9,98,30,3,0,33,30,3,0,33
+civilian overseas,howard,councilmanic district code 005,54,8,5,67,18,2,0,20,18,2,0,20
+,howard total,,295,33,21,349,105,17,0,122,104,17,0,121
+civilian overseas,montgomery,councilmanic district code 001,695,64,57,816,248,17,8,273,245,17,8,270
+civilian overseas,montgomery,councilmanic district code 002,109,13,20,142,38,7,3,48,38,7,2,47
+civilian overseas,montgomery,councilmanic district code 003,210,31,18,259,68,11,1,80,68,11,1,80
+civilian overseas,montgomery,councilmanic district code 004,426,30,29,485,147,12,0,159,147,12,0,159
+civilian overseas,montgomery,councilmanic district code 005,150,20,22,192,54,6,3,63,54,6,3,63
+civilian overseas,montgomery,councilmanic district code 006,258,35,20,313,107,9,4,120,106,9,4,119
+civilian overseas,montgomery,councilmanic district code 007,140,16,19,175,40,3,5,48,39,3,5,47
+,montgomery total,,1988,209,185,2382,702,65,24,791,697,65,23,785
+civilian overseas,prince georges,councilmanic district code 001,48,11,6,65,11,4,2,17,11,4,2,17
+civilian overseas,prince georges,councilmanic district code 002,43,2,0,45,22,0,0,22,22,0,0,22
+civilian overseas,prince georges,councilmanic district code 003,54,6,0,60,23,5,0,28,23,5,0,28
+civilian overseas,prince georges,councilmanic district code 004,70,6,3,79,26,3,0,29,26,3,0,29
+civilian overseas,prince georges,councilmanic district code 005,27,2,0,29,8,2,0,10,7,2,0,9
+civilian overseas,prince georges,councilmanic district code 006,23,2,1,26,10,0,0,10,10,0,0,10
+civilian overseas,prince georges,councilmanic district code 007,8,1,2,11,2,0,0,2,2,0,0,2
+civilian overseas,prince georges,councilmanic district code 008,24,3,5,32,10,0,0,10,10,0,0,10
+civilian overseas,prince georges,councilmanic district code 009,23,3,0,26,9,2,0,11,9,2,0,11
+,prince georges total,,320,36,17,373,121,16,2,139,120,16,2,138
+civilian overseas,talbot,councilmanic district code 000,22,6,1,29,11,3,0,14,11,3,0,14
+,talbot total,,22,6,1,29,11,3,0,14,11,3,0,14
+civilian overseas,wicomico,councilmanic district code 001,1,0,0,1,0,0,0,0,0,0,0,0
+civilian overseas,wicomico,councilmanic district code 002,9,2,0,11,5,0,0,5,5,0,0,5
+civilian overseas,wicomico,councilmanic district code 003,9,4,0,13,3,2,0,5,3,2,0,5
+civilian overseas,wicomico,councilmanic district code 004,8,1,0,9,3,0,0,3,3,0,0,3
+civilian overseas,wicomico,councilmanic district code 005,3,1,0,4,2,0,0,2,2,0,0,2
+,wicomico total,,30,8,0,38,13,2,0,15,13,2,0,15
+civilian overseas total,,,3951,541,286,4778,1414,193,32,1639,1399,191,31,1621
+domestic civilian,anne arundel,councilmanic district code 001,4505,1469,1440,7414,3013,995,362,4370,3006,992,355,4353
+domestic civilian,anne arundel,councilmanic district code 002,4157,1575,0,5732,2860,1120,0,3980,2844,1115,0,3959
+domestic civilian,anne arundel,councilmanic district code 003,4041,2322,1553,7916,2746,1535,442,4723,2731,1532,437,4700
+domestic civilian,anne arundel,councilmanic district code 004,5399,1425,1759,8583,3679,966,476,5121,3657,962,467,5086
+domestic civilian,anne arundel,councilmanic district code 005,6800,3502,2351,12653,4723,2321,728,7772,4697,2305,722,7724
+domestic civilian,anne arundel,councilmanic district code 006,8147,2974,0,11121,6077,2104,0,8181,6050,2096,0,8146
+domestic civilian,anne arundel,councilmanic district code 007,5690,2848,0,8538,4102,1950,0,6052,4089,1941,0,6030
+,anne arundel total,,38739,16115,7103,61957,27200,10991,2008,40199,27074,10943,1981,39998
+domestic civilian,baltimore city,councilmanic district code 001,3027,352,0,3379,1973,152,0,2125,1945,151,0,2096
+domestic civilian,baltimore city,councilmanic district code 002,2857,184,0,3041,2173,115,0,2288,2149,113,0,2262
+domestic civilian,baltimore city,councilmanic district code 003,3896,262,0,4158,3000,160,0,3160,2973,159,0,3132
+domestic civilian,baltimore city,councilmanic district code 004,4718,208,0,4926,3574,130,0,3704,3559,129,0,3688
+domestic civilian,baltimore city,councilmanic district code 005,4889,388,0,5277,3724,206,0,3930,3697,202,0,3899
+domestic civilian,baltimore city,councilmanic district code 006,3622,139,0,3761,2732,80,0,2812,2712,80,0,2792
+domestic civilian,baltimore city,councilmanic district code 007,3311,121,0,3432,2458,77,0,2535,2437,76,0,2513
+domestic civilian,baltimore city,councilmanic district code 008,3542,113,0,3655,2688,68,0,2756,2671,68,0,2739
+domestic civilian,baltimore city,councilmanic district code 009,2245,120,0,2365,1650,68,0,1718,1637,67,0,1704
+domestic civilian,baltimore city,councilmanic district code 010,1570,216,0,1786,1039,121,0,1160,1024,118,0,1142
+domestic civilian,baltimore city,councilmanic district code 011,4176,361,0,4537,2978,202,0,3180,2951,199,0,3150
+domestic civilian,baltimore city,councilmanic district code 012,2807,123,0,2930,1949,53,0,2002,1930,52,0,1982
+domestic civilian,baltimore city,councilmanic district code 013,2664,121,0,2785,1845,70,0,1915,1829,68,0,1897
+domestic civilian,baltimore city,councilmanic district code 014,5026,176,0,5202,3813,114,0,3927,3789,112,0,3901
+,baltimore city total,,48350,2884,0,51234,35596,1616,0,37212,35303,1594,0,36897
+domestic civilian,baltimore county,councilmanic district code 001,8197,1979,0,10176,5822,1380,0,7202,5794,1372,0,7166
+domestic civilian,baltimore county,councilmanic district code 002,13458,2283,0,15741,10006,1493,0,11499,9957,1482,0,11439
+domestic civilian,baltimore county,councilmanic district code 003,10566,5218,0,15784,7439,3602,0,11041,7411,3587,0,10998
+domestic civilian,baltimore county,councilmanic district code 004,10128,1170,0,11298,7583,802,0,8385,7521,798,0,8319
+domestic civilian,baltimore county,councilmanic district code 005,7171,3622,0,10793,5076,2526,0,7602,5050,2522,0,7572
+domestic civilian,baltimore county,councilmanic district code 006,9145,2124,0,11269,6403,1428,0,7831,6372,1418,0,7790
+domestic civilian,baltimore county,councilmanic district code 007,3978,1873,0,5851,2713,1287,0,4000,2698,1282,0,3980
+,baltimore county total,,62643,18269,0,80912,45042,12518,0,57560,44803,12461,0,57264
+domestic civilian,cecil,councilmanic district code 001,690,612,0,1302,480,459,0,939,480,457,0,937
+domestic civilian,cecil,councilmanic district code 002,606,461,0,1067,402,353,0,755,399,351,0,750
+domestic civilian,cecil,councilmanic district code 003,647,823,0,1470,443,631,0,1074,440,631,0,1071
+domestic civilian,cecil,councilmanic district code 004,713,680,0,1393,513,504,0,1017,512,500,0,1012
+domestic civilian,cecil,councilmanic district code 005,640,838,0,1478,421,619,0,1040,421,618,0,1039
+,cecil total,,3296,3414,0,6710,2259,2566,0,4825,2252,2557,0,4809
+domestic civilian,dorchester,councilmanic district code 001,287,214,76,577,220,167,27,414,219,166,26,411
+domestic civilian,dorchester,councilmanic district code 002,280,38,0,318,203,30,0,233,203,29,0,232
+domestic civilian,dorchester,councilmanic district code 003,471,196,0,667,343,160,0,503,341,158,0,499
+domestic civilian,dorchester,councilmanic district code 004,227,155,0,382,158,117,0,275,158,117,0,275
+domestic civilian,dorchester,councilmanic district code 005,249,165,59,473,184,128,16,328,184,128,15,327
+,dorchester total,,1514,768,135,2417,1108,602,43,1753,1105,598,41,1744
+domestic civilian,frederick,councilmanic district code 001,3806,1609,1233,6648,2624,1075,425,4124,2609,1071,422,4102
+domestic civilian,frederick,councilmanic district code 002,3383,1607,1238,6228,2394,1027,412,3833,2385,1019,405,3809
+domestic civilian,frederick,councilmanic district code 003,3859,1099,934,5892,2735,763,295,3793,2724,762,294,3780
+domestic civilian,frederick,councilmanic district code 004,4537,1289,1107,6933,3101,851,341,4293,3082,845,339,4266
+domestic civilian,frederick,councilmanic district code 005,2154,1393,714,4261,1513,960,231,2704,1510,955,230,2695
+,frederick total,,17739,6997,5226,29962,12367,4676,1704,18747,12310,4652,1690,18652
+domestic civilian,harford,councilmanic district code a,1555,665,0,2220,1083,444,0,1527,1075,440,0,1515
+domestic civilian,harford,councilmanic district code b,1969,1403,0,3372,1388,1034,0,2422,1386,1024,0,2410
+domestic civilian,harford,councilmanic district code c,2242,1641,0,3883,1563,1222,0,2785,1549,1216,0,2765
+domestic civilian,harford,councilmanic district code d,1548,1515,0,3063,1146,1116,0,2262,1142,1113,0,2255
+domestic civilian,harford,councilmanic district code e,1882,1074,0,2956,1275,764,0,2039,1269,760,0,2029
+domestic civilian,harford,councilmanic district code f,2201,1081,0,3282,1578,764,0,2342,1571,760,0,2331
+,harford total,,11397,7379,0,18776,8033,5344,0,13377,7992,5313,0,13305
+domestic civilian,howard,councilmanic district code 001,4978,1306,1479,7763,3384,898,514,4796,3346,890,511,4747
+domestic civilian,howard,councilmanic district code 002,5089,900,0,5989,3499,608,0,4107,3475,605,0,4080
+domestic civilian,howard,councilmanic district code 003,4632,823,0,5455,3173,550,0,3723,3151,549,0,3700
+domestic civilian,howard,councilmanic district code 004,6276,1161,1599,9036,4454,784,573,5811,4420,784,567,5771
+domestic civilian,howard,councilmanic district code 005,5092,2081,1825,8998,3468,1388,666,5522,3453,1380,656,5489
+,howard total,,26067,6271,4903,37241,17978,4228,1753,23959,17845,4208,1734,23787
+domestic civilian,montgomery,councilmanic district code 001,20256,3122,4267,27645,13451,1802,991,16244,13358,1781,978,16117
+domestic civilian,montgomery,councilmanic district code 002,10176,2143,3160,15479,6472,1248,858,8578,6422,1237,852,8511
+domestic civilian,montgomery,councilmanic district code 003,13895,2089,3408,19392,9369,1261,1044,11674,9305,1252,1032,11589
+domestic civilian,montgomery,councilmanic district code 004,16712,1429,2644,20785,11676,832,755,13263,11550,824,745,13119
+domestic civilian,montgomery,councilmanic district code 005,12651,1797,2224,16672,9075,1167,678,10920,9015,1157,670,10842
+domestic civilian,montgomery,councilmanic district code 006,10471,1550,2055,14076,7179,946,616,8741,7123,939,608,8670
+domestic civilian,montgomery,councilmanic district code 007,11752,2749,3017,17518,7792,1646,819,10257,7746,1634,803,10183
+,montgomery total,,95913,14879,20775,131567,65014,8902,5761,79677,64519,8824,5688,79031
+domestic civilian,prince georges,councilmanic district code 001,5920,834,1132,7886,4074,514,294,4882,4041,511,292,4844
+domestic civilian,prince georges,councilmanic district code 002,4194,301,0,4495,2889,182,0,3071,2857,182,0,3039
+domestic civilian,prince georges,councilmanic district code 003,4653,388,0,5041,3176,236,0,3412,3151,233,0,3384
+domestic civilian,prince georges,councilmanic district code 004,8856,992,1221,11069,6295,646,305,7246,6250,644,301,7195
+domestic civilian,prince georges,councilmanic district code 005,7258,301,0,7559,5347,179,0,5526,5316,178,0,5494
+domestic civilian,prince georges,councilmanic district code 006,11777,364,708,12849,8918,212,168,9298,8858,211,166,9235
+domestic civilian,prince georges,councilmanic district code 007,6446,153,360,6959,4733,97,114,4944,4691,96,114,4901
+domestic civilian,prince georges,councilmanic district code 008,8767,412,737,9916,6723,271,201,7195,6678,270,197,7145
+domestic civilian,prince georges,councilmanic district code 009,10525,606,70,11201,7822,412,24,8258,7778,409,24,8211
+,prince georges total,,68396,4351,4228,76975,49977,2749,1106,53832,49620,2734,1094,53448
+domestic civilian,talbot,councilmanic district code 000,2490,1304,129,3923,1921,994,30,2945,1909,990,29,2928
+,talbot total,,2490,1304,129,3923,1921,994,30,2945,1909,990,29,2928
+domestic civilian,wicomico,councilmanic district code 001,777,192,0,969,557,134,0,691,553,134,0,687
+domestic civilian,wicomico,councilmanic district code 002,956,582,0,1538,693,441,0,1134,689,438,0,1127
+domestic civilian,wicomico,councilmanic district code 003,903,605,0,1508,643,433,0,1076,640,432,0,1072
+domestic civilian,wicomico,councilmanic district code 004,610,279,0,889,427,218,0,645,426,218,0,644
+domestic civilian,wicomico,councilmanic district code 005,671,482,0,1153,464,335,0,799,462,333,0,795
+,wicomico total,,3917,2140,0,6057,2784,1561,0,4345,2770,1555,0,4325
+domestic civilian total,,,380461,84771,42499,507731,269279,56747,12405,338431,267502,56429,12257,336188
+military overseas,anne arundel,councilmanic district code 001,3,0,3,6,1,0,0,1,1,0,0,1
+military overseas,anne arundel,councilmanic district code 002,4,3,0,7,2,1,0,3,2,1,0,3
+military overseas,anne arundel,councilmanic district code 003,3,1,1,5,2,0,0,2,2,0,0,2
+military overseas,anne arundel,councilmanic district code 004,3,1,3,7,2,0,1,3,2,0,1,3
+military overseas,anne arundel,councilmanic district code 005,2,2,3,7,1,1,0,2,1,1,0,2
+military overseas,anne arundel,councilmanic district code 006,6,3,0,9,2,1,0,3,2,1,0,3
+military overseas,anne arundel,councilmanic district code 007,4,2,0,6,3,1,0,4,3,1,0,4
+,anne arundel total,,25,12,10,47,13,4,1,18,13,4,1,18
+military overseas,baltimore city,councilmanic district code 001,1,1,0,2,0,0,0,0,0,0,0,0
+military overseas,baltimore city,councilmanic district code 002,0,0,0,0,0,0,0,0,0,0,0,0
+military overseas,baltimore city,councilmanic district code 003,0,0,0,0,0,0,0,0,0,0,0,0
+military overseas,baltimore city,councilmanic district code 004,1,0,0,1,0,0,0,0,0,0,0,0
+military overseas,baltimore city,councilmanic district code 005,0,0,0,0,0,0,0,0,0,0,0,0
+military overseas,baltimore city,councilmanic district code 006,0,0,0,0,0,0,0,0,0,0,0,0
+military overseas,baltimore city,councilmanic district code 007,0,0,0,0,0,0,0,0,0,0,0,0
+military overseas,baltimore city,councilmanic district code 008,0,1,0,1,0,0,0,0,0,0,0,0
+military overseas,baltimore city,councilmanic district code 009,1,0,0,1,1,0,0,1,1,0,0,1
+military overseas,baltimore city,councilmanic district code 010,0,0,0,0,0,0,0,0,0,0,0,0
+military overseas,baltimore city,councilmanic district code 011,1,1,0,2,1,0,0,1,1,0,0,1
+military overseas,baltimore city,councilmanic district code 012,0,0,0,0,0,0,0,0,0,0,0,0
+military overseas,baltimore city,councilmanic district code 013,0,0,0,0,0,0,0,0,0,0,0,0
+military overseas,baltimore city,councilmanic district code 014,0,0,0,0,0,0,0,0,0,0,0,0
+,baltimore city total,,4,3,0,7,2,0,0,2,2,0,0,2
+military overseas,baltimore county,councilmanic district code 001,4,2,0,6,0,1,0,1,0,1,0,1
+military overseas,baltimore county,councilmanic district code 002,0,1,0,1,0,0,0,0,0,0,0,0
+military overseas,baltimore county,councilmanic district code 003,1,3,0,4,1,2,0,3,1,2,0,3
+military overseas,baltimore county,councilmanic district code 004,0,0,0,0,0,0,0,0,0,0,0,0
+military overseas,baltimore county,councilmanic district code 005,0,1,0,1,0,0,0,0,0,0,0,0
+military overseas,baltimore county,councilmanic district code 006,1,0,0,1,1,0,0,1,1,0,0,1
+military overseas,baltimore county,councilmanic district code 007,0,0,0,0,0,0,0,0,0,0,0,0
+,baltimore county total,,6,7,0,13,2,3,0,5,2,3,0,5
+military overseas,cecil,councilmanic district code 001,1,2,0,3,1,2,0,3,1,2,0,3
+military overseas,cecil,councilmanic district code 002,0,0,0,0,0,0,0,0,0,0,0,0
+military overseas,cecil,councilmanic district code 003,0,0,0,0,0,0,0,0,0,0,0,0
+military overseas,cecil,councilmanic district code 004,0,1,0,1,0,1,0,1,0,1,0,1
+military overseas,cecil,councilmanic district code 005,0,0,0,0,0,0,0,0,0,0,0,0
+,cecil total,,1,3,0,4,1,3,0,4,1,3,0,4
+military overseas,dorchester,councilmanic district code 001,0,0,0,0,0,0,0,0,0,0,0,0
+military overseas,dorchester,councilmanic district code 002,0,0,0,0,0,0,0,0,0,0,0,0
+military overseas,dorchester,councilmanic district code 003,0,0,0,0,0,0,0,0,0,0,0,0
+military overseas,dorchester,councilmanic district code 004,0,0,0,0,0,0,0,0,0,0,0,0
+military overseas,dorchester,councilmanic district code 005,0,0,0,0,0,0,0,0,0,0,0,0
+,dorchester total,,0,0,0,0,0,0,0,0,0,0,0,0
+military overseas,frederick,councilmanic district code 001,0,4,2,6,0,3,0,3,0,3,0,3
+military overseas,frederick,councilmanic district code 002,0,0,2,2,0,0,0,0,0,0,0,0
+military overseas,frederick,councilmanic district code 003,1,0,1,2,0,0,0,0,0,0,0,0
+military overseas,frederick,councilmanic district code 004,0,0,0,0,0,0,0,0,0,0,0,0
+military overseas,frederick,councilmanic district code 005,2,2,0,4,0,2,0,2,0,2,0,2
+,frederick total,,3,6,5,14,0,5,0,5,0,5,0,5
+military overseas,harford,councilmanic district code a,2,0,0,2,2,0,0,2,2,0,0,2
+military overseas,harford,councilmanic district code b,0,0,0,0,0,0,0,0,0,0,0,0
+military overseas,harford,councilmanic district code c,0,1,0,1,0,0,0,0,0,0,0,0
+military overseas,harford,councilmanic district code d,1,2,0,3,1,1,0,2,1,1,0,2
+military overseas,harford,councilmanic district code e,2,0,0,2,0,0,0,0,0,0,0,0
+military overseas,harford,councilmanic district code f,0,3,0,3,0,1,0,1,0,1,0,1
+,harford total,,5,6,0,11,3,2,0,5,3,2,0,5
+military overseas,howard,councilmanic district code 001,0,2,0,2,0,0,0,0,0,0,0,0
+military overseas,howard,councilmanic district code 002,1,2,0,3,0,0,0,0,0,0,0,0
+military overseas,howard,councilmanic district code 003,2,1,0,3,0,0,0,0,0,0,0,0
+military overseas,howard,councilmanic district code 004,2,2,2,6,0,0,0,0,0,0,0,0
+military overseas,howard,councilmanic district code 005,3,3,2,8,1,1,0,2,1,1,0,2
+,howard total,,8,10,4,22,1,1,0,2,1,1,0,2
+military overseas,montgomery,councilmanic district code 001,3,0,4,7,0,0,1,1,0,0,1,1
+military overseas,montgomery,councilmanic district code 002,4,0,2,6,1,0,0,1,1,0,0,1
+military overseas,montgomery,councilmanic district code 003,2,0,1,3,0,0,1,1,0,0,1,1
+military overseas,montgomery,councilmanic district code 004,7,0,1,8,3,0,1,4,2,0,1,3
+military overseas,montgomery,councilmanic district code 005,2,0,2,4,1,0,0,1,1,0,0,1
+military overseas,montgomery,councilmanic district code 006,2,1,1,4,0,0,0,0,0,0,0,0
+military overseas,montgomery,councilmanic district code 007,2,2,1,5,1,0,0,1,1,0,0,1
+,montgomery total,,22,3,12,37,6,0,3,9,5,0,3,8
+military overseas,prince georges,councilmanic district code 001,3,1,1,5,1,0,0,1,1,0,0,1
+military overseas,prince georges,councilmanic district code 002,0,1,0,1,0,0,0,0,0,0,0,0
+military overseas,prince georges,councilmanic district code 003,1,1,0,2,0,1,0,1,0,1,0,1
+military overseas,prince georges,councilmanic district code 004,5,0,0,5,2,0,0,2,2,0,0,2
+military overseas,prince georges,councilmanic district code 005,1,0,0,1,0,0,0,0,0,0,0,0
+military overseas,prince georges,councilmanic district code 006,2,0,1,3,1,0,0,1,1,0,0,1
+military overseas,prince georges,councilmanic district code 007,0,0,1,1,0,0,0,0,0,0,0,0
+military overseas,prince georges,councilmanic district code 008,1,1,1,3,0,0,0,0,0,0,0,0
+military overseas,prince georges,councilmanic district code 009,1,0,0,1,0,0,0,0,0,0,0,0
+,prince georges total,,14,4,4,22,4,1,0,5,4,1,0,5
+military overseas,talbot,councilmanic district code 000,0,1,0,1,0,0,0,0,0,0,0,0
+,talbot total,,0,1,0,1,0,0,0,0,0,0,0,0
+military overseas,wicomico,councilmanic district code 001,0,0,0,0,0,0,0,0,0,0,0,0
+military overseas,wicomico,councilmanic district code 002,1,1,0,2,0,0,0,0,0,0,0,0
+military overseas,wicomico,councilmanic district code 003,0,2,0,2,0,1,0,1,0,1,0,1
+military overseas,wicomico,councilmanic district code 004,0,0,0,0,0,0,0,0,0,0,0,0
+military overseas,wicomico,councilmanic district code 005,0,0,0,0,0,0,0,0,0,0,0,0
+,wicomico total,,1,3,0,4,0,1,0,1,0,1,0,1
+military overseas total,,,89,58,35,182,32,20,4,56,31,20,4,55
+military us,anne arundel,councilmanic district code 001,15,9,7,31,6,6,2,14,6,6,2,14
+military us,anne arundel,councilmanic district code 002,6,9,0,15,2,5,0,7,2,5,0,7
+military us,anne arundel,councilmanic district code 003,12,4,6,22,2,1,0,3,2,1,0,3
+military us,anne arundel,councilmanic district code 004,31,8,15,54,15,5,1,21,14,5,1,20
+military us,anne arundel,councilmanic district code 005,14,18,12,44,7,8,1,16,7,8,1,16
+military us,anne arundel,councilmanic district code 006,14,12,0,26,8,7,0,15,8,7,0,15
+military us,anne arundel,councilmanic district code 007,11,13,0,24,5,5,0,10,5,5,0,10
+,anne arundel total,,103,73,40,216,45,37,4,86,44,37,4,85
+military us,baltimore city,councilmanic district code 001,4,1,0,5,0,0,0,0,0,0,0,0
+military us,baltimore city,councilmanic district code 002,1,0,0,1,1,0,0,1,1,0,0,1
+military us,baltimore city,councilmanic district code 003,2,0,0,2,1,0,0,1,1,0,0,1
+military us,baltimore city,councilmanic district code 004,0,0,0,0,0,0,0,0,0,0,0,0
+military us,baltimore city,councilmanic district code 005,1,0,0,1,0,0,0,0,0,0,0,0
+military us,baltimore city,councilmanic district code 006,3,0,0,3,2,0,0,2,2,0,0,2
+military us,baltimore city,councilmanic district code 007,1,1,0,2,0,0,0,0,0,0,0,0
+military us,baltimore city,councilmanic district code 008,3,0,0,3,2,0,0,2,2,0,0,2
+military us,baltimore city,councilmanic district code 009,0,1,0,1,0,0,0,0,0,0,0,0
+military us,baltimore city,councilmanic district code 010,2,0,0,2,1,0,0,1,1,0,0,1
+military us,baltimore city,councilmanic district code 011,7,2,0,9,4,1,0,5,4,1,0,5
+military us,baltimore city,councilmanic district code 012,0,0,0,0,0,0,0,0,0,0,0,0
+military us,baltimore city,councilmanic district code 013,0,0,0,0,0,0,0,0,0,0,0,0
+military us,baltimore city,councilmanic district code 014,1,1,0,2,0,1,0,1,0,0,0,0
+,baltimore city total,,25,6,0,31,11,2,0,13,11,1,0,12
+military us,baltimore county,councilmanic district code 001,9,1,0,10,4,1,0,5,4,1,0,5
+military us,baltimore county,councilmanic district code 002,4,2,0,6,2,0,0,2,2,0,0,2
+military us,baltimore county,councilmanic district code 003,4,4,0,8,2,3,0,5,2,3,0,5
+military us,baltimore county,councilmanic district code 004,6,0,0,6,5,0,0,5,5,0,0,5
+military us,baltimore county,councilmanic district code 005,5,4,0,9,3,2,0,5,3,2,0,5
+military us,baltimore county,councilmanic district code 006,3,2,0,5,2,0,0,2,2,0,0,2
+military us,baltimore county,councilmanic district code 007,3,2,0,5,1,1,0,2,1,1,0,2
+,baltimore county total,,34,15,0,49,19,7,0,26,19,7,0,26
+military us,cecil,councilmanic district code 001,1,1,0,2,1,1,0,2,1,1,0,2
+military us,cecil,councilmanic district code 002,0,0,0,0,0,0,0,0,0,0,0,0
+military us,cecil,councilmanic district code 003,1,3,0,4,0,0,0,0,0,0,0,0
+military us,cecil,councilmanic district code 004,0,0,0,0,0,0,0,0,0,0,0,0
+military us,cecil,councilmanic district code 005,0,1,0,1,0,1,0,1,0,1,0,1
+,cecil total,,2,5,0,7,1,2,0,3,1,2,0,3
+military us,dorchester,councilmanic district code 001,0,0,0,0,0,0,0,0,0,0,0,0
+military us,dorchester,councilmanic district code 002,0,0,0,0,0,0,0,0,0,0,0,0
+military us,dorchester,councilmanic district code 003,0,0,0,0,0,0,0,0,0,0,0,0
+military us,dorchester,councilmanic district code 004,0,0,0,0,0,0,0,0,0,0,0,0
+military us,dorchester,councilmanic district code 005,1,0,0,1,1,0,0,1,1,0,0,1
+,dorchester total,,1,0,0,1,1,0,0,1,1,0,0,1
+military us,frederick,councilmanic district code 001,7,4,3,14,4,3,0,7,4,3,0,7
+military us,frederick,councilmanic district code 002,2,6,2,10,0,2,0,2,0,1,0,1
+military us,frederick,councilmanic district code 003,3,2,7,12,1,0,1,2,1,0,0,1
+military us,frederick,councilmanic district code 004,2,3,3,8,2,1,2,5,2,0,2,4
+military us,frederick,councilmanic district code 005,3,5,3,11,2,3,0,5,2,3,0,5
+,frederick total,,17,20,18,55,9,9,3,21,9,7,2,18
+military us,harford,councilmanic district code a,1,2,0,3,0,0,0,0,0,0,0,0
+military us,harford,councilmanic district code b,1,2,0,3,0,1,0,1,0,1,0,1
+military us,harford,councilmanic district code c,1,2,0,3,0,0,0,0,0,0,0,0
+military us,harford,councilmanic district code d,1,7,0,8,0,4,0,4,0,4,0,4
+military us,harford,councilmanic district code e,1,3,0,4,1,1,0,2,1,1,0,2
+military us,harford,councilmanic district code f,5,3,0,8,2,2,0,4,2,2,0,4
+,harford total,,10,19,0,29,3,8,0,11,3,8,0,11
+military us,howard,councilmanic district code 001,10,1,1,12,3,1,0,4,3,1,0,4
+military us,howard,councilmanic district code 002,11,4,0,15,4,2,0,6,3,2,0,5
+military us,howard,councilmanic district code 003,9,2,0,11,3,0,0,3,3,0,0,3
+military us,howard,councilmanic district code 004,8,2,7,17,1,1,1,3,1,1,1,3
+military us,howard,councilmanic district code 005,4,4,5,13,1,2,1,4,1,2,1,4
+,howard total,,42,13,13,68,12,6,2,20,11,6,2,19
+military us,montgomery,councilmanic district code 001,27,10,10,47,11,6,1,18,11,6,1,18
+military us,montgomery,councilmanic district code 002,7,4,3,14,2,3,0,5,2,3,0,5
+military us,montgomery,councilmanic district code 003,9,9,8,26,2,3,1,6,2,3,1,6
+military us,montgomery,councilmanic district code 004,19,7,6,32,8,1,2,11,8,0,2,10
+military us,montgomery,councilmanic district code 005,5,1,5,11,3,0,1,4,3,0,1,4
+military us,montgomery,councilmanic district code 006,18,2,6,26,5,2,2,9,5,2,2,9
+military us,montgomery,councilmanic district code 007,14,5,9,28,5,2,0,7,5,2,0,7
+,montgomery total,,99,38,47,184,36,17,7,60,36,16,7,59
+military us,prince georges,councilmanic district code 001,6,3,3,12,4,1,0,5,4,1,0,5
+military us,prince georges,councilmanic district code 002,6,0,0,6,2,0,0,2,2,0,0,2
+military us,prince georges,councilmanic district code 003,8,1,0,9,1,0,0,1,1,0,0,1
+military us,prince georges,councilmanic district code 004,12,5,7,24,3,1,0,4,3,1,0,4
+military us,prince georges,councilmanic district code 005,1,2,0,3,0,0,0,0,0,0,0,0
+military us,prince georges,councilmanic district code 006,14,0,4,18,3,0,0,3,3,0,0,3
+military us,prince georges,councilmanic district code 007,6,2,2,10,2,2,0,4,2,2,0,4
+military us,prince georges,councilmanic district code 008,10,5,7,22,2,3,0,5,2,3,0,5
+military us,prince georges,councilmanic district code 009,11,6,1,18,5,1,0,6,5,1,0,6
+,prince georges total,,74,24,24,122,22,8,0,30,22,8,0,30
+military us,talbot,councilmanic district code 000,1,1,0,2,1,1,0,2,1,1,0,2
+,talbot total,,1,1,0,2,1,1,0,2,1,1,0,2
+military us,wicomico,councilmanic district code 001,0,0,0,0,0,0,0,0,0,0,0,0
+military us,wicomico,councilmanic district code 002,0,1,0,1,0,0,0,0,0,0,0,0
+military us,wicomico,councilmanic district code 003,0,0,0,0,0,0,0,0,0,0,0,0
+military us,wicomico,councilmanic district code 004,1,0,0,1,1,0,0,1,1,0,0,1
+military us,wicomico,councilmanic district code 005,1,0,0,1,0,0,0,0,0,0,0,0
+,wicomico total,,2,1,0,3,1,0,0,1,1,0,0,1
+military us total,,,410,215,142,767,161,97,16,274,159,93,15,267
+grand total,,,384911,85585,42962,513458,270886,57057,12457,340400,269091,56733,12307,338131

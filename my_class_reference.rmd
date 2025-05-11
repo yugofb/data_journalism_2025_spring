@@ -176,7 +176,7 @@ DATASET |>
 
 DATASET |>
   mutate(
-    COLUMNNAME = case_when(
+    NEWCOLUMNNAME = case_when(
       COLUMNNAME == "variable" ~ "newVariableName",
       TRUE ~ COLUMNNAME
       ##^ "TRUE ~ COLUMNNAME" is what keeps the other variables in the column from getting nuked

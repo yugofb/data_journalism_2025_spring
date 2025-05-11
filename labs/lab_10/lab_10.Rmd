@@ -37,7 +37,16 @@ Let's explore the election results from last night and make some maps!
 
 **Q1.** Make a county-level map of Maryland's results for U.S. Senate using `md_senate_county_24.csv` in the data folder, calculating the difference between Angela Alsobrooks's percentage of the total votes and Larry Hogan's percentage of the total votes and displaying that percentage difference on the map. What is the story here, and what is the county with the most interesting results?
 
-**A1.**
+**I think the story here is how counties in Central Maryland play a major role in determining election results. Prince George's county had the most interesting results with over 82% of voters voting for Alsobrooks.**
+##Maps
+Alsobrooks: https://datawrapper.dwcdn.net/VTSUM/2/
+Hogan: https://datawrapper.dwcdn.net/xzW0e/1/
+```{r, echo=FALSE}
+knitr::include_graphics("maps/angela-alsobrooks-by-county.png")
+knitr::include_graphics("maps/larry-hogan-by-county.png")
+
+```
+
 
 ```{r}
 
@@ -47,14 +56,43 @@ md_senate_county_24 <- read_csv("data/md_senate_county_24.csv")
 
 ```{r}
 
-md_senate_county_24 |>
+md_senate_county_24 <- md_senate_county_24 |>
   mutate(total = (Alsobrooks+Hogan+Scott)) |>
-  mutate(alsobrooks_hogan_perc_diff = (Hogan-Alsobrooks) / (Hogan+Alsobrooks/2) * 100)
-
-write_csv(md_senate_county_24)
+  mutate(alsobrooks_hogan_perc_diff = ((Hogan-Alsobrooks)/((Hogan+Alsobrooks)/2)) * 100) |>
+  mutate(alsobrooks_perc = (Alsobrooks/total)*100) |>
+  mutate(hogan_perc = (Hogan/total)*100) |>
+  mutate(FIPS = case_when(
+    County == "Allegany" ~ "24001",
+    County == "Anne Arundel" ~ "24003",
+    County == "Baltimore City" ~ "24510",
+    County == "Baltimore County" ~ "24005",
+    County == "Calvert" ~ "24009",
+    County == "Caroline" ~ "24011",
+    County == "Carroll" ~ "24013",
+    County == "Cecil" ~ "24015",
+    County == "Charles" ~ "24017",
+    County == "Dorchester" ~ "24019",
+    County == "Frederick" ~ "24021",
+    County == "Garrett" ~ "24023",
+    County == "Harford" ~ "24025",
+    County == "Howard" ~ "24027",
+    County == "Kent" ~ "24029",
+    County == "Montgomery" ~ "24031",
+    County == "Prince George's" ~ "24033",
+    County == "Queen Anne's" ~ "24035",
+    County == "Saint Mary's" ~ "24037",
+    County == "Somerset" ~ "24039",
+    County == "Talbot" ~ "24041",
+    County == "Washington" ~ "24043",
+    County == "Wicomico" ~ "24045",
+    County == "Worcester" ~ "24047"
+  ))
 
 ```
 
+```{r}
+write_csv(md_senate_county_24, "data/md_senate_county_24.csv", col_names = TRUE)
+```
 
 **Q2.** Make a county-level map showing the difference between Donald Trump's county-level performance this year and Larry Hogan's, using percentages to compare the two as you did in Q1. You can use the dataframe you initially loaded for Q1, and you'll need to load the 2024 presidential results in the data folder and join them to it before proceeding. Are there any counties where Trump got a higher percentage than Hogan? How would you describe the map showing the Trump-Hogan difference?
 

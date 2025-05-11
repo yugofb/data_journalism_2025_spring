@@ -43,33 +43,29 @@ Column names like dem_sent, rep_sent, oth_sent, total_sent, and similar fields f
 #loading datasets
 ```{r}
 
-early_voting_turnout <- read.csv("data/early_voting.csv")
+early_voting_turnout <- read.csv("data/early_voting_turnout.csv")
 mail_in_ballots <- read.csv("data/mail_in_ballots.csv")
 
 ```
 
-#cleaning dataset ONE via coding to fix column names, then exporting the dataset to excel to add missing variables (county names)
-```{r}
-
+#cleaning dataset ONE via coding to fix column names
+#this r markdown is what we talked about in class because of the dataset being overwritten previously, we have the cleaned data but you said we could use this markdown instead of having to re-use tabula and do it all again. Thanks!
+```{r error=TRUE}
 early_voting_turnout <- early_voting_turnout |>
   clean_names() |>
   mutate(across(starts_with("day"), ~gsub(",", "", .) %>% as.numeric)) |>
   mutate(across(starts_with("x_"), ~gsub("%", "", .))) |>
-  rename(perc_day1 = x_day1,
-         perc_day2 = x_day2,
-         perc_day3 = x_day3,
-         perc_day4 = x_day4,
-         perc_day5 = x_day5,
-         perc_day6 = x_day6,
-         perc_day7 = x_day7,
-         perc_day8 = x_day8,
-         perc_total = x_total)
-  
- 
-```
-
-##oops more cleaning
-```{r}
+  rename(
+    perc_day1 = x_day1,
+    perc_day2 = x_day2,
+    perc_day3 = x_day3,
+    perc_day4 = x_day4,
+    perc_day5 = x_day5,
+    perc_day6 = x_day6,
+    perc_day7 = x_day7,
+    perc_day8 = x_day8,
+    perc_total = x_total
+  )
 
 early_voting_turnout <- early_voting_turnout |>
   mutate(across(starts_with("perc_"), ~gsub("%", "", .))) |>
@@ -78,18 +74,9 @@ early_voting_turnout <- early_voting_turnout |>
   mutate(eligible_actives = str_remove(eligible_actives, ",")) |>
   mutate(eligible_actives = as.numeric(eligible_actives))
 
-```
-
-```{r}
-
-write_csv(early_voting_turnout, "data/early_voting.csv", col_names = TRUE)
-
-```
-
-##final clean data reupload
-```{r}
-
-clean_early_voting_turnout <- read_csv("data/clean_early_voting.csv")
+early_voting_turnout <- early_voting_turnout |> 
+  clean_names()
+colnames(early_voting_turnout)
 
 ```
 
@@ -115,19 +102,16 @@ mail_in_ballots <- mail_in_ballots |>
   mutate(total_received = as.numeric(total_received)) |>
   mutate(total_accepted = as.numeric(total_accepted))
   
-
 ```
 
-##writing the changes to the dataset file, then exporting to excel to get rid of empty rows
+##HEY!! HEY!! Here we exported the data to to excel to fill in some blank rows.
+
+
+#Uploaded the fully cleaned data from excel
 ```{r}
 
-write_csv(mail_in_ballots, "data/mail_in_ballots.csv", col_names = TRUE)
-
-```
-
-```{r}
-
-clean_mail_in_ballots <- read_csv("data/clean_mail_in_ballots.csv")
+clean_early_voting_turnout <- read.csv("data/clean_early_voting.csv")
+clean_mail_in_ballots <- read.csv("data/clean_mail_in_ballots.csv")
 
 ```
 
@@ -157,8 +141,9 @@ clean_early_voting_turnout |>
 
 ```
 
-Question #2: For the county with the most early votes, which days had the highest and lowest total number of early votes? What is the percentage difference between these days?
-**Answer: For Prince George's county, day 8 (the last day of early voting) had the highest number of early votes with a total of 6,338. Day 3 had the lowest number of early votes with a total of 1,154. The difference between the highest and lowest days was 5184 votes, with day 8 recieving about 138% more votes than day 3.**
+Question #2: For the county with the most early votes, which days had the highest and lowest total number of early votes? What does this difference suggest?
+
+**Answer: For Prince George's county, day 8 (the last day of early voting) had the highest number of early votes with a total of 6,338. Day 3 had the lowest number of early votes with a total of 1,154. The difference between the highest and lowest days was 5184 votes, with day 8 recieving about 138% more votes than day 3. This suggests that most early voters waited until the very last day to submit their early votes.**
 ```{r}
 
 clean_early_voting_turnout |>
@@ -169,33 +154,103 @@ clean_early_voting_turnout |>
     summarise(day1, day2, day3, day4, day5, day6, day7, day8, total)
   
 ```
+
+Question #3: Which counties had the highest mail-in ballot rejection rates for Democratic, Republican, and Other party voters in the 2024 election?
+
+**Answer: In the Maryland 2024 Election, Calvert County had the highest amount of rejected Democratic mail-in ballots at a rate of 1.1%. Baltimore City has the highest amount of rejected Republican mail-in ballots with a rate of 1.4%. Dorchester County had the highest amount of other party rejected mail-in ballots with a rate of about 4.6%. Overall, mail-in rejection rates vary dramatically by county and party. I would like to know what is contributing to the exceptionally high rejection rates of other party mail-in ballots in Dorchester county.**
+
 ```{r}
+#democratic rejections
+clean_mail_in_ballots |>
+  filter(!str_detect(county_name, "total|all")) |>
+  group_by(county_name) |>
+  summarise(
+    dem_rec = sum(dem_received),
+    dem_acc = sum(dem_accepted)
+  ) |>
+    mutate(
+    dem_rejection_perc = ((dem_rec - dem_acc) / dem_rec) * 100
+  ) |>
+  arrange(desc(dem_rejection_perc))
 
-((6338-1154) / ((6338+1154)/2)) * 100
+#republican rejections
+clean_mail_in_ballots |>
+  filter(!str_detect(county_name, "total|all")) |>
+  group_by(county_name) |>
+  summarise(
+    rep_rec = sum(rep_received),
+    rep_acc = sum(rep_accepted)
+  ) |>
+    mutate(
+    rep_rejection_perc = ((rep_rec - rep_acc) / rep_rec) * 100
+  ) |>
+  arrange(desc(rep_rejection_perc))
 
+#other rejections
+clean_mail_in_ballots |>
+  filter(!str_detect(county_name, "total|all")) |>
+  group_by(county_name) |>
+  summarise(
+    oth_rec = sum(oth_received),
+    oth_acc = sum(oth_accepted)
+  ) |>
+    mutate(
+    oth_rejection_perc = ((oth_rec - oth_acc) / oth_rec) * 100
+  ) |>
+  arrange(desc(oth_rejection_perc))
 ```
 
+Question #4: Which counties had the biggest gaps between eligible voters and early voting turnout?
 
-Question #3: Which counties had the highest percentage of rejected mail-in ballots? What was the percentage?
-**Answer: **
+**Answer: In the 2024 Maryland election, the counties with the largest gaps between eligible voters and actual number of early votes were Montgomery (660,471), Prince George's (521,643) and Baltimore County (419,729). I would like to know if there are any specific factors contributing to this turnout gap. It would also be interesting to see if these counties have comparatively higher rates of day-of voting than counties that rely more on early-voting.**
+
 ```{r}
 
+early_gap <- clean_early_voting_turnout |>
+  filter(party == "TOTAL") |>
+  group_by(county) |>
+  summarise(
+    early_votes = sum(total),
+    eligible_acts = sum(eligible_actives)
+  ) |>
+  mutate(
+    turnout_gap = eligible_acts - early_votes
+    ) |>
+  arrange(desc(turnout_gap))
 
-
-```
-
-Question #4: By what percent has overall voter turnout increased or decreased since 2020?
-**Answer: **
-```{r}
-
-
+early_gap
 
 ```
 
 Question #5: Which counties relied most heavily on early voting in 2024?
-**Answer: **
+
+**Answer: The five counties with the highest early voting rates were Garrett, Queen Anne's, Saint Mary's, Caroline and Kent county. These are some of Maryland smallest counties population wise. This, in conjunction with the large early voting turnout gap in larger counties, indicates that there may be some connection to low populations and higher rates of early voting. I would love to talk to people who do early voting in these smaller counties and see why. Maybe it has something to do with transportation, or other factors that may contribute to people preferring to do early voting?**
+
 ```{r}
+early_votes_by_county <- clean_early_voting_turnout |>
+  filter(party == "TOTAL") |>
+  group_by(county) |>
+  summarise(early_votes = sum(total, na.rm = TRUE)) |>
+  mutate(county = str_to_lower(county))
 
+mail_in_votes_by_county <- clean_mail_in_ballots |>
+  filter(county_name != "Total") |>
+  filter(county_name != "All Counties") |>
+  group_by(county_name) |>
+  summarise(mail_in_votes = sum(total_accepted, na.rm = TRUE)) |>
+  mutate(county_name = str_to_lower(county_name))
 
+combined_votes <- early_votes_by_county |>
+  left_join(mail_in_votes_by_county, by = c("county" = "county_name"))
+
+combined_votes <- combined_votes |>
+  mutate(mail_in_votes = replace_na(mail_in_votes, 0)) |>
+  mutate(total_votes = early_votes + mail_in_votes)
+
+combined_votes <- combined_votes |>
+  mutate(early_vote_percent = (early_votes / total_votes) * 100) |>
+  arrange(desc(early_vote_percent))
+
+combined_votes
 
 ```
