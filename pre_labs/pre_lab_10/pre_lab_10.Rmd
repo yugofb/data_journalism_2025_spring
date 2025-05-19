@@ -314,7 +314,7 @@ Let's clean the population table. We're going to rename the "NAME" column to "Co
 ### Task: Run code
 
 **Task** Run the following code. Describe the output in the space below.
-**Answer** The output chaned the `NAME` column to `County`, renamed the `estimate` column to `population` and removed changes the names of the counties by removing extra information.
+**Answer** The output changed the `NAME` column to `County`, renamed the `estimate` column to `population` and changes the names of the counties by removing extra information.
 
 ```{r}
 md_county_population <- md_county_population |>

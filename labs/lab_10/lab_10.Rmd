@@ -37,85 +37,193 @@ Let's explore the election results from last night and make some maps!
 
 **Q1.** Make a county-level map of Maryland's results for U.S. Senate using `md_senate_county_24.csv` in the data folder, calculating the difference between Angela Alsobrooks's percentage of the total votes and Larry Hogan's percentage of the total votes and displaying that percentage difference on the map. What is the story here, and what is the county with the most interesting results?
 
-**I think the story here is how counties in Central Maryland play a major role in determining election results. Prince George's county had the most interesting results with over 82% of voters voting for Alsobrooks.**
-##Maps
-Alsobrooks: https://datawrapper.dwcdn.net/VTSUM/2/
-Hogan: https://datawrapper.dwcdn.net/xzW0e/1/
-```{r, echo=FALSE}
-knitr::include_graphics("maps/angela-alsobrooks-by-county.png")
-knitr::include_graphics("maps/larry-hogan-by-county.png")
-
-```
-
+**I think the story here is how counties in Central Maryland play a major role in determining election results. Prince George's county had the most interesting results with over 82% of voters voting for Alsobrooks. One particular county saw a much larger percentage difference in votes between Hogan and Alsobrooks, so it could be interesting to find if theres any particular campaigns targeting that area, or particular policies that residents feel strongly about.**
 
 ```{r}
 
 md_senate_county_24 <- read_csv("data/md_senate_county_24.csv")
 
 ```
-
+##getting county geos/shape files
 ```{r}
-
-md_senate_county_24 <- md_senate_county_24 |>
-  mutate(total = (Alsobrooks+Hogan+Scott)) |>
-  mutate(alsobrooks_hogan_perc_diff = ((Hogan-Alsobrooks)/((Hogan+Alsobrooks)/2)) * 100) |>
-  mutate(alsobrooks_perc = (Alsobrooks/total)*100) |>
-  mutate(hogan_perc = (Hogan/total)*100) |>
-  mutate(FIPS = case_when(
-    County == "Allegany" ~ "24001",
-    County == "Anne Arundel" ~ "24003",
-    County == "Baltimore City" ~ "24510",
-    County == "Baltimore County" ~ "24005",
-    County == "Calvert" ~ "24009",
-    County == "Caroline" ~ "24011",
-    County == "Carroll" ~ "24013",
-    County == "Cecil" ~ "24015",
-    County == "Charles" ~ "24017",
-    County == "Dorchester" ~ "24019",
-    County == "Frederick" ~ "24021",
-    County == "Garrett" ~ "24023",
-    County == "Harford" ~ "24025",
-    County == "Howard" ~ "24027",
-    County == "Kent" ~ "24029",
-    County == "Montgomery" ~ "24031",
-    County == "Prince George's" ~ "24033",
-    County == "Queen Anne's" ~ "24035",
-    County == "Saint Mary's" ~ "24037",
-    County == "Somerset" ~ "24039",
-    County == "Talbot" ~ "24041",
-    County == "Washington" ~ "24043",
-    County == "Wicomico" ~ "24045",
-    County == "Worcester" ~ "24047"
-  ))
+counties_geos <- get_acs(geography = "county",
+              variables = c(population = "B01001_001"),
+              state = "MD",
+              year = 2022,
+              geometry = TRUE)
 
 ```
 
+##cleaning counties_geos so it can be joined with md_senate_county_24
+```{r error=FALSE}
+counties_geos <- counties_geos |>
+  rename(County = NAME) |>
+  mutate(County = str_to_title(str_remove_all(County,", Maryland|County"))) |>
+  mutate(County = str_trim(County,side="both")) |>
+  mutate(County = if_else(County == "St. Mary's", "Saint Mary's", County)) |> 
+  mutate(County = if_else(County == "Baltimore", "Baltimore County", County)) |>
+  select(geometry, County) |>
+  relocate(geometry)
+
+counties_geos
+```
+
+#cleaning md_senate_county_24 and mutating to find the percentage of votes that went to alsobrooks and hogan
 ```{r}
-write_csv(md_senate_county_24, "data/md_senate_county_24.csv", col_names = TRUE)
+
+md_senate_county_24 <- md_senate_county_24 |>
+  select(Alsobrooks, Hogan, Scott, County, GEOID) |>
+  mutate(total = (Alsobrooks+Hogan+Scott)) |>
+  mutate(alsobrooks_hogan_perc_diff = ((Hogan-Alsobrooks)/((Hogan+Alsobrooks)/2)) * 100) |>
+  mutate_if(is.numeric, round, 2)
+
+```
+
+##joining datasets
+```{r}
+
+senate_24_w_geos <- md_senate_county_24 |>
+  left_join(counties_geos) |>
+  relocate(geometry) |>
+  mutate(County = str_to_title(str_remove_all(County,", Maryland|County"))) 
+
+senate_24_w_geos
+
+```
+
+##plotting datasets... mapping even
+```{r}
+
+senate_24_w_geos |>
+  ggplot() +
+  geom_sf(aes(fill=alsobrooks_hogan_perc_diff, geometry=geometry)) +
+  theme_minimal() +
+  scale_fill_viridis_c(option="magma")
+
 ```
 
 **Q2.** Make a county-level map showing the difference between Donald Trump's county-level performance this year and Larry Hogan's, using percentages to compare the two as you did in Q1. You can use the dataframe you initially loaded for Q1, and you'll need to load the 2024 presidential results in the data folder and join them to it before proceeding. Are there any counties where Trump got a higher percentage than Hogan? How would you describe the map showing the Trump-Hogan difference?
 
 Also answer this: is a map the best way to present this data? What else could you make that might convey more information?
 
-**A2.**
+**A2: The map showcases the percentage difference of votes recieved by Trump and Hogan, with areas with a higher difference being darker. I'm not sure if this map is the best way to present this information; I know that the counties that are darker have a higher percentage difference between Trump and Hogan, but that isn't easily translated to readers. I think a bar chart would be more effective at displaying the difference between the amount of votes they received. Trump outperformed hogan in Kent and Allegany county.**
 
+##reading presidential election data, mutating `Baltimore County` so it matches, joining data w/ geos
 ```{r}
+
+pres_county_md <- read_csv("data/md_pres_county_24.csv")
+
+pres_county_md <- pres_county_md |>
+  mutate(County = str_to_title(str_remove_all(County,", Maryland|County")))
+
+pres_senate_24_w_geos <- pres_county_md |>
+  left_join(senate_24_w_geos) |>
+  relocate(geometry)
+
+pres_senate_24_w_geos
+
+```
+#perc difference between trump and hogan
+```{r}
+
+pres_senate_24_w_geos <- pres_senate_24_w_geos |>
+  select(Trump, Hogan, County, geometry) |>
+  mutate(trump_hogan_performance_perc_difference = ((Trump-Hogan)/((Trump+Hogan)/2)) * 100) |>
+  mutate_if(is.numeric, round, 2)
+  
+  pres_senate_24_w_geos
+
+```
+
+
+##mapping percentage difference between trump and hogan's votes by county
+```{r}
+
+pres_senate_24_w_geos |>
+  ggplot() +
+  geom_sf(aes(fill=trump_hogan_performance_perc_difference, geometry=geometry)) +
+  theme_minimal() +
+  scale_fill_viridis_c(option="magma")
+
 ```
 
 **Q3** Make another map showing the difference between Larry Hogan's county-level performance this year and from his governor race in 2018, using percentages to compare the two as you did in Q2. You can use the dataframe you initially loaded for Q1, and you'll need to load the 2018 governor results in the data folder and join them to it before proceeding. Are there any counties where Hogan did better this year? How would you describe the map showing the difference?
 
-**A3**
-
+**A3: There was very little difference in Hogan's overall vote count in most counties. The main difference was in Prince George's county and Baltimore City, which are two of the most densely populated areas in Maryland. The change in votes in these counties may have contributed to his loss in 2024.**
+#loading 2018 data, mutating to match other dataset, joining 2018 data with senate_24_w_geos
 ```{r}
-```
 
+gov_county_md_2018 <- read_csv("data/md_gov_county_18.csv")
+
+gov_county_md_2018 <- gov_county_md_2018 |>
+  mutate(County = str_to_title(str_remove_all(County,", Maryland|County"))) |>
+  rename(Hogan2018 = Hogan)
+
+hogan2018v2024_w_geos <- gov_county_md_2018 |>
+  left_join(senate_24_w_geos) |>
+  relocate(geometry)
+
+hogan2018v2024_w_geos <- hogan2018v2024_w_geos |>
+  select(geometry, GEOID, County, Hogan2018, Hogan) |>
+  mutate(hogan2018v2024_perc = ((Hogan-Hogan2018)/((Hogan+Hogan2018)/2)) * 100) |>
+  mutate_if(is.numeric, round, 2)
+
+hogan2018v2024_w_geos
+
+```
+##plotting difference between hogan's 2018 votes and 2024 votes
+```{r}
+
+hogan2018v2024_w_geos |>
+  ggplot() +
+  geom_sf(aes(fill=hogan2018v2024_perc, geometry=geometry)) +
+  theme_minimal() +
+  scale_fill_viridis_c(option="magma")
+
+```
 **Q4.** Choose your own map adventure! In the data folder I've included Maryland county-level results for the abortion rights amendment vote this year, plus the 2020 presidential results by county and 2022 governor's results by county. Using one of those and at least one other contest for comparison, make a county-level map showing what you think is the most interesting aspect of that data, and describe the results in terms of a possible story. You can bring in other data, such as Census information, if you like.
 
-**A4.**
+**A4: I chose to compare the difference between votes against abortion in 2024 to votes for Trump in 2020. The data showed that there was a large gap between the number of people who voted against abortion and those who voted for Trump. Generally, the rates of MD voters who voted against abortion were much lower than those who voted for Trump. The only counties in which this gap wasn't present  was Prince George's county and Baltimore City However, these cities saw a low rate of votes for Trump overall. For Prince George's and Baltimore City, it seems that people who voted for Trump will generally vote against abortion. However, people who voted for Trump in other counties seem to be more likely to vote for abortion rather than against it. I think it is interesting that there is such a large gap between people who vote Republicans and people who actually vote to support one of the Party's most well-known policies. A good story that could come from this would be to find Marylanders who voted for Trump in 2020 but didn't vote against abortion in 2024 and learn more about why they didn't vote against it.**
+#loading datasets
+```{r}
+
+md_abortion_24 <- read_csv("data/md_abortion_24.csv")
+pres_20_md <- read_csv("data/md_pres_county_20.csv")
+
+md_abortion_24 <- md_abortion_24 |>
+  rename(forabortion = For) |>
+  rename(againstabortion = Against)
+  
+
+```
+
+#joining datasets
+```{r}
+
+abortion_pres_county <- pres_20_md |>
+  left_join(md_abortion_24) |>
+  left_join(counties_geos) |>
+  relocate(geometry)
+
+```
+#mutating to find percent difference of votes against abortion in 2024 versus votes for trump in 2020
+```{r}
+
+abortion_pres_county <- abortion_pres_county |>
+  mutate(antiabortion2024_vs_trump2020 = ((againstabortion-Trump)/((againstabortion+Trump)/2)) * 100) |>
+  mutate_if(is.numeric, round, 2)
+
+```
 
 ```{r}
 
+abortion_pres_county |>
+  ggplot() +
+  geom_sf(aes(fill=antiabortion2024_vs_trump2020, geometry=geometry)) +
+  theme_minimal() +
+  scale_fill_viridis_c(option="magma")
+
 ```
+
 
 -30-
